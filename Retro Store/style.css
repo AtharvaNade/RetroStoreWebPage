@@ -1,0 +1,642 @@
+/*global- to be used in general for all pages */
+
+@font-face{
+    font-family: pixelbold;
+    src: url(./fonts/SF-Pixelate-Bold.ttf);
+}
+@font-face{
+font-family:pixelregular;
+src:url(./fonts/SF-Pixelate.ttf)
+
+}
+html{
+    min-width:300px;
+}
+ 
+ a, body, div, footer, header, h1, h2, h3, nav, p {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    /* align-content:center; */
+ }
+
+ .border{
+     border: black 2px solid;
+     border-radius: 8px;
+ }
+ h1{
+    font-family: pixelbold;   
+    font-size:5em; 
+    text-align: center;
+    margin:0 auto;
+    padding:1%;
+    background-color:#CE2B3E;
+    color:#FAE6E7;
+   
+ }
+ 
+ .current_page{
+     color: red;
+ }
+ body {
+   
+   background-color:black;
+}
+ .important{
+    color:red;
+    font-weight: bold;
+   
+}
+header{
+    width:100%;
+}
+ /* site navigation bar */
+nav.sitenavigation {
+     text-align: center; 
+     color: #34180f;
+     text-decoration: none;
+     height:5%;
+     width:80%;
+     margin:0 auto;
+     margin-top:1em;    
+      border-bottom:2px white solid;
+      border-top:2px white solid; 
+  }
+  nav.sitenavigation a{
+    margin:2vw;
+    text-align: center;
+    font-size:125%;
+    text-decoration: none;
+    font-family: pixelbold;
+    color:white;
+  }
+  nav.sitenavigation li{
+    display: inline-block;
+  }
+  nav.sitenavigation a:hover {
+    
+    
+    color:#CD2A3D; 
+  }
+  /*mobile menu*/
+  nav{
+    z-index:5;
+  }
+  ul {
+    list-style-type: none;
+  }
+ 
+  
+   .navigation-menu-button{
+    float:left;
+    height:50px;
+    top:0;
+    padding:5px;
+    margin-right:1em;
+   }
+
+ 
+  nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+    color: black;
+    background-color: white;
+  }
+ 
+
+  /* this is for the top section of the page containing the current sales and why us text */
+ 
+
+  
+    aside{
+    float: right;
+    text-align: center;
+    font-family: pixelbold;
+    color:black;
+   font-size:15px;
+   margin-right:1%;
+   margin-top:1em;
+   width:17%;
+   height: 18%;
+  }
+aside div{
+margin:1em 0 6em 0;
+line-height: 2.5em;
+background-color:#FAE6E7;
+max-width: 200px;
+max-height: 250px;
+
+  }
+ aside img{
+margin:0 auto;
+float:left;
+width:100%;
+max-width:200px;
+
+ }
+ .aside-mobile{
+    text-align: center;
+    font-family: pixelbold;
+    color:black;
+   font-size:15px;
+
+ }
+ .aside-mobile div{
+    line-height: 2.5em;
+    background-color:#FAE6E7;
+  padding:10px;
+    margin:0.5em auto;
+ }
+
+    .why_us{
+      float: left;
+      width:70%;
+      margin:1em;
+      text-align: center;
+      font-family: pixelbold;
+      font-size:150%;
+      padding:20px;
+      color:#fff;
+      background-color:#0A9BB0;
+  }
+
+  .why_us h2{
+      font-size:150%;
+  }
+    a{
+      text-decoration: none;
+      color:black;
+
+  }
+  /*slideshow*/
+  .slider{
+    font-family: pixelbold;
+	width:200px;
+	margin:40px auto;
+    overflow:auto;
+    background-color: #051918;
+    color:#31D4C1;
+    padding:1em;
+    display: none;
+}
+.slider h2{
+padding:10px;
+}
+.slider-inner{
+	width:200px;
+	height:250px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	padding:3px;
+}
+
+.slider-inner img{
+	display:none;
+	width:200px;
+	height:215px;
+}
+
+.slider-inner img.active{
+	display:inline-block;
+}
+
+.prev,.next{
+	cursor: pointer;
+}
+
+.prev{
+    float: left;
+	position:relative;
+	margin-right:-45px;
+	z-index:100;
+}
+
+.next{
+    float: right;
+	position:relative;
+	margin-left:-45px;
+	z-index:100;
+}
+
+  /*this is for the lower section of the page containing the upcoming sales and highlights*/
+  .highlights {
+    padding: 20px;
+   background-color: #051918;
+    overflow: hidden;
+    float: left;
+    margin:1.5em;
+    
+  }
+  .highlights-items h2{
+    text-align:center;
+    font-family: pixelbold;
+
+    color:#fff;
+  }
+  
+  .highlights-title{
+    text-align: left;
+    margin-bottom: 1em;
+    font-family: pixelbold;
+    font-size:30px;
+    color: #31D4C1;
+  }
+  
+  .highlights-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:1em; 
+    font-size:100%;
+    max-width:950px;
+  }
+  
+ 
+  
+  .highlights-items div {
+    align-content: center;
+    justify-content: center;
+    margin: 0 2.5% 1.5% 2.5%;
+    flex-basis: 1px;
+
+  }
+  .highlights-items img{
+width:200px;
+height: 300px;
+  }
+  
+  
+  /*this is for the about us text in the aboutus.html*/
+  .about_us{
+    font-family: pixelbold;
+    padding-bottom: 7.9em;
+    color:#fff;
+    width:90%;
+    margin: 1em auto;
+    padding:1em;
+    background-color: #0A9BB0;
+  }
+  .about_us h2{
+      font-size: 3.5em;
+      text-align: center;
+  }
+  .about_us h3{
+      text-align: center;
+      font-size: 140%;
+  }
+  .copyrights{
+      font-size:12px;
+      color:black;
+      font-family: pixelbold;
+      font-weight: bold;
+  }
+  /*this is for the contactus page*/
+  /*contact us text */
+  .contact_us{
+    font-family: pixelbold;
+  margin:2%;
+    line-height: 4em;
+    color: #fff;
+   background-color: #0A9BB0;
+   text-align: left ;
+width:60%;
+  }
+  .contact_us h2{
+      margin:1em;
+      text-align:center;
+      border-bottom: 2px #fff solid;
+      border-top:2px #fff solid;
+      font-size:25px;
+  }
+  .contact_us h3{
+      font-size: 100%;
+      padding-bottom:0;
+      margin:1em;
+  }
+  /*social media section*/
+.contact-page{
+    display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+
+  .social_media_2{
+    text-align: center;
+    font-family: pixelbold;
+    font-size: 100%;
+    padding-top:2em;
+   
+    width:25%;
+    margin:3%;
+    padding:20px;
+    background-color: #FAE6E7;
+}
+ 
+  .social_media_2 h2{
+      font-size:100%;
+  }
+  .social_media_2 a{
+      text-decoration: none;
+      color:black;
+      font-size:100%;
+  }
+  .social_media_2 p{
+      padding: 1em;
+      font-size:100%;
+  }
+  /*games section */
+  /*games options section */
+.games_options_heading{
+    margin-top:3em;
+    padding-bottom:2em;
+    background-color:#051918;
+    font-size:20px;
+    margin:3em auto;
+    text-align: center;
+}
+  .games_options{
+    font-family: pixelbold;
+    padding-top:2em;
+    margin:0 2% 0 2%;
+  display: inline-block;
+
+
+  }
+  .games_options a{
+      text-decoration: none;
+      color:#31D4C1;
+  }
+  .games_options_heading a:hover{
+      border-bottom:4px solid black;
+      color: red;
+  }
+  /*games boxes*/
+  
+  .games_boxes{
+      width:100%;
+      text-align: center;
+      font-family: pixelbold;
+      font-weight: bold;
+      font-size:100%;
+      margin:0 auto;
+     color:#fff;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+  }
+  .games{
+      width: 200px;
+      height: 300px;
+      padding: 50px;
+      flex-basis: 50px;
+  }
+      .games_boxes a{
+          text-decoration: none;
+          color:#fff;
+      }
+/* forms*/
+.form{
+    margin:1em auto;
+    background-color:#aaa;
+    width:90%;
+    padding: 1em;
+}
+.options{
+margin:0 auto;
+display: flex;
+margin-left: 4em;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+.option{
+    flex-basis: 50px;
+}
+
+#contentstart{
+    color: #fff;
+    font-family: pixelregular;
+    text-align: center;
+    line-height: 2em;
+}
+fieldset{
+    border:none;
+}
+
+.name-input{
+    margin-right: 0.1em;
+}
+.mobile-input {
+    font-size: 15px;
+    margin-right: 2.7em;
+}
+  /*FAQ section*/
+  .questions{
+    font-family: pixelbold; 
+    font-size:15px;
+    font-weight:bold;
+    line-height: 3em;
+    
+  }
+  .questions p{
+    background-color:#FAE6E7;
+    margin:1em;
+    padding:1em;
+  }
+/*monster hunter page*/
+.monster_hunter_title{
+    font-family: pixelbold; 
+    color:#31D4C1;
+    background-color:#051918; 
+    text-align: center;
+    font-weight: bold;
+    font-size:30px;
+    margin:1em;
+}
+.monster_hunter_description{
+    color:#fff;
+    margin:2em;
+    padding: 10px;
+    font-family: pixelbold; 
+    text-align:center;
+    font-size:100%;
+    font-weight:bold;
+    line-height: 40px;
+}
+.review{
+    display: inline-block;
+    background-color:#CD2A3D;
+    margin:1em;
+    color: #fff;
+    text-decoration: none;
+    padding:10px;
+
+}
+.monster_hunter_description p{
+    background-color: #0A9BB0;
+    margin:2em auto;
+    padding:10px;
+
+}
+.monster_hunter_launch_trailer{
+    padding:10px;
+    margin:1em auto;
+}
+.monster_hunter_reviews a{
+    color: #fff;
+    margin:1em;
+}
+.monster_hunter_gameplay{
+        
+    padding:10px;
+    margin:1em;
+}
+.monster_hunter_buy_button{
+    margin:1em;
+    background-color:#CE2B3E;
+}
+
+/* footer section */
+footer {
+    
+    padding: 0.6em;
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    clear: both;
+    font-family: pixelbold; 
+margin: 0 auto;
+ }
+
+ footer a{
+     color:black;
+     text-decoration: none;
+ }
+ footer p {
+    margin: 0.4em;
+ }
+/*@media screens*/
+@media screen and (min-width:801px){
+    .why_us{
+        float: left;
+        width:70%;
+    }
+   
+    .highlights{
+        max-width: 70%;
+    }
+    .highlights-items div{
+        margin:0 5% 0 5%;
+    }
+    nav.sitenavigation{
+        position: relative;;
+        top:auto;
+        left:auto;
+        
+    }
+    .aside-mobile{
+        display: none;
+    }
+    
+      
+      nav.sitenavigation ul{
+        display:block; 
+      }
+      .navigation-menu-button{
+        display:none;
+      }
+
+
+}
+@media screen and (max-width:1275px){
+    .highlights-items img{
+        width:150px;
+        height:200px;
+          }
+}
+@media screen and (max-width:965px){
+    .highlights-items div{
+        margin:0 2.5% 0 2.5%;
+    }
+   
+}
+@media screen and (max-width:650px){
+    .highlights{
+        display: none;
+    }
+    .slider{
+        display: block;
+    }
+    .monster_hunter_description{
+        font-size:10px;
+    }
+   
+}
+@media screen and (max-width:800px){
+  
+    h1{
+    padding:20px;
+    font-size:30px;
+    }
+
+ .why_us{
+     margin:1em auto;
+     font-size:10px;
+     float:none;
+ }   
+ .why_us h2{
+     font-size:15px;
+ }
+ 
+ aside{
+    display: none;
+ }
+ .aside-mobile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0 auto; 
+    font-size:100%;
+ }
+
+
+ nav.sitenavigation{
+     border:none;
+     float: left;
+     width:200px;
+     font-size:10px;
+     position: absolute; 
+     top: 0;
+     left: 0;
+ }
+ nav.sitenavigation ul{
+    display:none;
+    z-index:5;
+    background-color:black;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    top: 120%;
+    
+   }
+   nav.sitenavigation a{
+       margin:5vw;
+   }
+ 
+ aside div{
+     width:100px;
+     height:150px;
+ }
+ aside img{
+     display:none;
+ }
+ .social_media{
+     display:none;  
+ }
+ .contact-page{
+    justify-content: center;
+}
+}
+  
